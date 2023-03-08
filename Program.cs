@@ -49,14 +49,29 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.Write("Введите певрое число: ");
-int A = int.Parse(Console.ReadLine()!);
+// Console.Write("Введите певрое число: ");
+// int A = int.Parse(Console.ReadLine()!);
 
-if (A%2==0)
-{
-    Console.WriteLine("Число четное: ");
+// if (A%2==0)
+// {
+//     Console.WriteLine("Число четное: ");
+// }
+// else
+// {
+//     Console.WriteLine("Число не четное: ");
+// } 
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+Console.Write("Введите число: ");
+int N = int.Parse(Console.ReadLine()!);
+
+int A = 2;
+
+while(A <= N){
+    Console.Write($"{A} ");
+    A=A+2;
 }
-else
-{
-    Console.WriteLine("Число не четное: ");
-} 
