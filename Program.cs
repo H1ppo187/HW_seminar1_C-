@@ -16,29 +16,47 @@
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
+// Console.Write("Введите певрое число: ");
+// int A = int.Parse(Console.ReadLine()!);
+// Console.Write("Введите второе число: ");
+// int B = int.Parse(Console.ReadLine()!);
+// Console.Write("Введите третье число: ");
+// int C = int.Parse(Console.ReadLine()!);
+// if (A > B)
+// {
+//     if (A > C)
+//     {
+//         Console.WriteLine("Максимальное число: " + A);
+//     }
+//     else
+//     {
+//         Console.WriteLine("Максимальное число: " + C);
+//     }
+// }
+
+// else if (B > C)
+// {
+//     Console.WriteLine("Максимальное число: " + B);
+// }
+// else
+// {
+//     Console.WriteLine("Максимальное число: " + C);
+// }
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка(number%2==0)).
+
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
 Console.Write("Введите певрое число: ");
 int A = int.Parse(Console.ReadLine()!);
-Console.Write("Введите второе число: ");
-int B = int.Parse(Console.ReadLine()!);
-Console.Write("Введите третье число: ");
-int C = int.Parse(Console.ReadLine()!);
-if (A > B)
-{
-    if (A > C)
-    {
-        Console.WriteLine("Максимальное число: " + A);
-    }
-    else
-    {
-        Console.WriteLine("Максимальное число: " + C);
-    }
-}
 
-else if (B > C)
+if (A%2==0)
 {
-    Console.WriteLine("Максимальное число: " + B);
+    Console.WriteLine("Число четное: ");
 }
 else
 {
-    Console.WriteLine("Максимальное число: " + C);
-}
+    Console.WriteLine("Число не четное: ");
+} 
